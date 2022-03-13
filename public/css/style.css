@@ -1,0 +1,602 @@
+/* ------- geral ----------- */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Encode Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    background-color: #E5E5E5;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: inherit;
+}
+
+/* ------- topo da página ----------- */
+
+.barra-superior { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    font-weight: normal;
+    width: 100%;
+    height: 54px;
+    top: 0;
+    left: 0;
+    border-bottom: 1px solid rgb(211, 211, 211);
+    background-color: white;
+    z-index: 1;
+}
+
+.icon-instagram {
+    width: 20px;
+    height: 20px;
+}
+
+.separador-vertical {
+    background: #DBDBDB;
+    width: 1px; 
+    height: 22px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.logo-instagram {
+    width: 103px;
+    height: 29px;
+}
+
+.pesquisar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid;
+    width: 215px;
+    height: 29px;
+    margin-left: 215px;
+    font-family: 'Roboto', sans-serif;;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    background-color:  #FAFAFA;;
+    color: #979797;
+    border-radius: 3px;
+}
+
+.icon-compartilhar {
+    width: 20px;
+    height: 20px;
+    margin-left: 215px;
+}
+
+.icon-dm {
+    width: 20px;
+    height: 20px;
+    margin-left: 25px;
+}
+
+.icon-coracao {
+    width: 20px;
+    height: 20px;
+    margin-left: 25px;
+}
+
+.icon-perfil {
+    width: 20px;
+    height: 20px;
+    margin-left: 25px;
+}
+
+/* ------- Conteúdo Geral --------- */
+
+main {
+    background-color: #E5E5E5;
+    display: flex;
+    justify-content: center; 
+    margin: auto;
+}
+
+/* ------- Stories --------- */
+
+.stories {
+    width: 614px;
+    height: 118px;
+    margin-top: 88px;
+    display: flex;
+    align-items: center;
+    background-color:  #FFFFFF;
+    border-radius: 3px;
+    overflow: hidden;
+    border: 1px solid rgb(211, 211, 211);
+}
+
+.stories img {
+    width: 66px;
+    height: 66px;
+}
+
+.stories1 {
+    display: flex;
+    position: relative;
+    margin-left: 14px;
+}
+
+.stories1:first-child {
+    margin-left: 18px;
+}
+
+.stories2 {
+    width: 56px;
+    height: 56px; 
+    top: 5px;
+    left: 5px;
+    position: absolute;
+}
+
+.stories2 img {
+    justify-content: center;
+    align-items: center;
+    border-radius: 28px;
+    width: 56px;
+    height: 56px;
+    margin-bottom: 6px;
+}
+
+.stories2 p {
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.setinha {
+    margin-left: 580px;
+    position: absolute;
+}
+
+.setinha img {
+    width: 26px;
+    height: 26px;
+}
+
+/* ------- Conteúdo Principal -------- */
+
+.principais{
+    margin-right: 335px;
+    height: 1997px;
+}
+
+.principal:first-child {
+    margin-top: 24px;
+}
+
+.principal {
+    margin-top: 60px;
+}
+
+.feed {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.username{
+    width: 614px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: #FFFFFF;
+    border-radius: 3px  3px 0 0;
+    border: 1px solid rgb(211, 211, 211)
+}
+
+.username img{
+    margin-left: 17px;
+}
+
+.username ion-icon {
+    margin-left: 453px;
+}
+
+.username p{
+    margin-left: 15px;
+    font-weight: 500;
+    font-family: Roboto;
+    font-style: normal;
+    font-size: 14px;
+    color: #262626;
+}
+
+.foto {
+    width: 614px;
+    height: 614px;
+    background-color: #FFFFFF;
+    border-left: 1px solid rgb(211, 211, 211);
+    border-right: 1px solid rgb(211, 211, 211);
+}
+
+.foto video {
+    width: 612px;
+    height: 612px;
+}
+
+.foto3 {
+    height: 91px;
+}
+
+.icon-configfoto {
+    display: flex;
+    align-items: center;
+    width: 614px;
+    height: 42px;
+    background-color:#FFFFFF;
+    border-left: 1px solid rgb(211, 211, 211);
+    border-right: 1px solid rgb(211, 211, 211);
+}
+
+.icon-configfoto ion-icon {
+    margin-left: 18px;
+}
+.icon-configfoto ion-icon:nth-child(4) {
+    margin-left: 478px;
+} 
+
+.curtidas {
+    display: flex;
+    align-items: center;
+    width: 614px;
+    height: 34px;
+    background-color: #FFFFFF;
+    border-left: 1px solid rgb(211, 211, 211);
+    border-right: 1px solid rgb(211, 211, 211);
+}
+
+.curtidas p {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    color: #000000;
+}
+
+.curtidas img {
+   margin-left: 17px;
+   margin-right: 5px;   
+}
+
+.comentarios {
+    box-sizing: border-box;
+    width: 614px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    color: #000000;
+    background-color: #FFFFFF;
+    border-left: 1px solid rgb(211, 211, 211);
+    border-right: 1px solid rgb(211, 211, 211);
+    padding-left: 17px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+.comentario1 {
+    display: flex;
+    margin-top: 7px;
+}
+
+.comentario1 ion-icon {
+    margin-left: auto;
+    margin-right: 15px;
+}
+
+.comentario2 {
+    display: flex;
+    margin-top: 7px;
+}
+
+.comentario2 ion-icon {
+    margin-left: auto;
+    margin-right: 15px;
+}
+
+.comentario3 {
+    width: 100%;
+    height: 50px;
+    border: 1px solid #dfdfdf;
+    border-radius: 0px  0px 3px 3px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+}
+
+input {
+    border-top: none;
+    font-family: Roboto;
+    width: 550px;
+    height: 50px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    border: 1px solid rgb(211, 211, 211);
+    color: black;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    font-size: 14px;
+}
+
+button {
+    width: 70px;
+    height: 100%;
+    background: none;
+    border: none;
+    outline: none;
+    text-transform: capitalize;
+    font-size: 30px;
+    color: rgb(0, 162, 255);
+    opacity: 0.5;
+}
+
+.publicar {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    border-radius: 3px 3px 0 0;
+    font-family: Roboto;
+    margin-right: 10px;
+}
+
+ button:hover {
+    color: #0095F6;
+    opacity: 0.6;
+    transition: 300ms;
+  }
+
+/* ------- Sidebar ----------- */
+
+.sideBar{
+    background-color: #E5E5E5;
+    position: fixed;
+    top: 0;
+    width: 295px;
+    margin-left: 646px;
+    margin-top: 88px;
+}
+
+.elemento-principal {
+    background-color: #E5E5E5;
+    height: 100px;
+    width: 300px;
+    border-radius: 3px  3px 0 0;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+.descricao {
+    margin-left: 17px;
+}
+
+.elemento-principal img {
+    width: 56px;
+    height: 56px;
+}
+
+.elemento-principal p:first-child {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #262626;
+}
+
+.elemento-principal p {
+    color: #C7C7C7;
+}
+
+.elementos-secundarios {
+    background-color: #E5E5E5;
+    width: 300px;
+    height: 325px;
+    border-radius: 0 0 3px 3px;
+}
+
+.titulo-sugestoes {
+    display: flex;
+    font-weight: 500;
+    font-family: Roboto;
+    font-style: normal;
+    font-size: 12px;
+    color: #8E8E8E;
+}
+
+.titulo-sugestoes p:nth-child(2) {  
+    font-family: Roboto;
+    font-style: normal;
+    font-size: 12px;
+    color: #262626;
+    margin-left: auto;
+}
+
+.sugestoes {
+    margin-top: 17px;
+}
+
+.sugestoes img {
+    margin-right: 11px;
+}
+
+
+
+.sugestao {
+    display: flex;
+    font-family: Roboto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 14px;
+    color: #262626;
+}
+
+.p1 {
+    font-family: Roboto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 12px;
+    color: #8E8E8E; 
+}
+
+.p2 {
+    font-family: Roboto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 12px;
+    color: #139EF2;
+    margin-left: auto
+    
+}
+
+/* ------- copyrights --------- */
+
+.infos{
+    margin-top: 33px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    color: #C7C7C7;
+}
+
+.infos p{
+    margin-bottom: 18px;
+}
+
+
+/* ------- Barra Inferior (versão mobile) --------- */
+
+.barra-inferior{
+    display: none;
+}
+
+/* ------------- mobile ------------ */
+
+@media (max-width: 614px){
+    .sideBar, .separador-vertical, .pesquisar, .icon-dm, .icon-coracao, .icon-perfil, .setinha{
+        display: none;
+    }
+
+    .icon-instagram{
+        margin-right: auto;
+        margin-left: 22px;
+    }
+
+    .icon-compartilhar{
+        margin-left: auto;
+        margin-right: 22px;
+    }
+
+    .barra-superior{
+        width: 614px;
+    }
+
+    .stories{
+        background-color: #E5E5E5;
+        height: 121px;
+        margin-left: 15px;
+        margin-top: auto;
+        margin-top: 50px;
+        margin-bottom: auto;
+    }
+
+    .username{
+        margin-left: 16px;
+    }
+
+    .foto{
+        margin-left: 16px;
+    }
+
+    .foto3{
+        margin-left: 16px;
+    }
+
+    .icon-configfoto{
+        margin-left: 16px;
+    }
+
+    .curtidas{
+        margin-left: 16px;
+    }
+
+    .barra-inferior{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+       
+        align-items: center;
+        height: 54px;
+        background-color:  #FFFFFF;
+        border-top: 1px solid rgb(211, 211, 211);
+
+    }
+
+    .icon-casa{
+        margin-left: 20px;
+    }
+
+    .icon-lupa{
+        margin-left: 118px;
+    }
+
+    .icon-mais{
+        margin-left: 124px;
+    }
+
+    .icon-coracao2{
+        margin-left: 122px;
+    }
+
+    .icon-perfil2{
+        margin-left: 122px;
+    }
+
+    .comentarios{
+        margin-left: 16px;
+    }
+
+    input{
+        margin-left: 16px;
+    }
+}
+
+@media (max-width: 935px) {
+    .sideBar{
+        display: none;
+    }
+
+    .barra-superior{
+        width: 935px;
+    }
+
+    .pesquisar{
+        margin-left: 177px;
+    }
+
+    .principais {
+        margin-left: 320px;
+    }
+}
