@@ -3,11 +3,11 @@ import Topo from './topo';
 import Conteudo from './conteudo';
 import BarraInferior from './barrainferior';
 
-function Instagram (){
+function Instagram() {
     return (
         <div className='site'>
             <Topo />
-			<Conteudo />
+            <Conteudo />
             <BarraInferior />
         </div>
     );

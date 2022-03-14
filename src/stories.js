@@ -12,7 +12,7 @@ export default function Stories() {
 
     return (
         <div className="stories">
-            {stories.map(element => <Storie info={element} />)}
+            {stories.map(element => <Storie dados={element} />)}
             <div className="setinha"><img src="imagens/Vector2.png" /></div>
         </div>
     );
@@ -23,8 +23,8 @@ function Storie(props) {
         <div className="stories1">
             <img src="imagens/stories_background1.png" />
             <div className="stories2">
-                <img src={props.info.foto} />
-                <p>{props.info.nome}</p>
+                <img src={props.dados.foto} />
+                <p>{props.dados.nome}</p>
             </div>
         </div>
     );

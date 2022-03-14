@@ -12,7 +12,7 @@ export default function SideBar() {
     return (
         <div className="sideBar">
 
-            <SugestaoPrincipal  foto={sugestaoUsuario.foto} nome={sugestaoUsuario.nome} usuario={sugestaoUsuario.usuario}  />
+            <SugestaoPrincipal foto={sugestaoUsuario.foto} nome={sugestaoUsuario.nome} usuario={sugestaoUsuario.usuario} />
 
             <div className="elementos-secundarios">
                 <div className="titulo-sugestoes">
@@ -20,7 +20,7 @@ export default function SideBar() {
                     <p>Ver tudo</p>
                 </div>
 
-                {sugestoes.map(element => <Sugestoes info={element} />)}
+                {sugestoes.map(element => <Sugestoes dados={element} />)}
 
                 <div className="infos">
                     <p>Sobre • Ajuda • Imprensa • API • Carreiras • Privacidade •
@@ -38,9 +38,9 @@ function Sugestoes(props) {
 
     return (
         <div className="sugestoes">
-            <div className="sugestao"><img src={props.info.foto} />
+            <div className="sugestao"><img src={props.dados.foto} />
                 <div>
-                    <p>{props.info.nome}</p>
+                    <p>{props.dados.nome}</p>
                     <p className="p1">Segue você</p>
                 </div>
                 <p className="p2">Seguir</p>
